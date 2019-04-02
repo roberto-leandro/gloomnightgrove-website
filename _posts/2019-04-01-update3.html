@@ -1,0 +1,82 @@
+---
+permalink: /updates/update3.html
+categories: [update]
+title: "Update #3: Redefined Scope"
+layout: slides
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update #3</title>
+    <link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
+    <meta charset="utf-8">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Lato|Roboto|Roboto+Condensed');
+      body { font-family: 'Roboto'; font-size: 2em}
+      h1, h2, h3 {
+        font-family: 'Lato';
+        font-weight: normal;
+      }
+      p { font-size: 1.25em; }
+      div { font-size: 1.25em; }
+      li { font-size: 1.25em; }
+      li p { line-height: 1.25em; font-size: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      
+      .small li {  font-size: 1em; }
+      
+      .medium li {  font-size: 1.1em; }
+      
+      .remark-code, .remark-inline-code { font-family: 'Roboto'; }
+
+      .remark-slide-content {
+        background-color: #d6f3da;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Update #3
+
+### ${placeholder} Studios
+
+---
+
+# Redefined scope
+
+ * 2 animals/levels:
+  - Crow
+  - Cat
+ 
+ * 3 enemies:
+  - Armadillo
+  - Jellyfish
+  - Kromav
+
+---
+class: center, middle
+
+# Design Document
+
+### <a href="{{baseurl}}/assets/pdf/design_document.pdf">Gloomnight Grove GDD</a>
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script src="/CI-2700/assets/unity/eternalshadows/TemplateData/UnityProgress.js"></script>
+    <script src="/CI-2700/assets/unity/eternalshadows/Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "/CI-2700/assets/unity/eternalshadows/Build/webbuild.json", {onProgress: UnityProgress});
+    </script>
+    <script src="http://tikzjax.com/v1/tikzjax.js"></script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+---
+# Layout that inherits from post to inject a web-gl build into a regular post.
+layout: post
+---
+
+<!doctype html>
+<html>
+  <body>
+		<!-- Add page__unity.html snippet to posts with a unity_dir atribute. --> 
+		{% if page.unity_dir %}
+			{% include page__unity.html %}
+		{% endif %}
+        {{ content }}
+  </body>
+</html>
+</div>

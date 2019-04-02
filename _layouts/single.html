@@ -9,11 +9,6 @@ layout: default
     <title>{{ page.title }}</title>
   </head>
   <body>
-		
-		<!-- Add page__unity.html snippet to posts with a unity_dir atribute. --> 
-		{% if page.unity_dir %}
-			{% include page__unity.html %}
-		{% endif %}
         {{ content }}
   </body>
 </html>
